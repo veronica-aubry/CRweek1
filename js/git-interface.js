@@ -11,8 +11,8 @@ var sortRepos = require('./../js/getRepos.js').sortRepos;
       foundRepositories = sortRepos(response);
       console.log(foundRepositories);
       foundRepositories.forEach(function(repo) {
-        $("#showRepos").append('<h3>' + repo.name + '</h3><br>Description: ' + repo.description + '<br>')
-      })
+        $("#showRepos").append('<h3>' + repo.name + '</h3><br>Description: ' + repo.description + '<br>');
+      });
       }).fail(function(error){
       console.log(error.responseJSON.message);
       $("#showRepos").append("Something went wrong! Try again.");
