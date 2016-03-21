@@ -12,3 +12,17 @@ $green : #75B975;
     color: white;
   }
 }
+
+#activityChart {
+  background-color: white;
+  width: 600px;
+  .bar {
+  fill: blue;
+  }
+  .text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+  }
+
+}
